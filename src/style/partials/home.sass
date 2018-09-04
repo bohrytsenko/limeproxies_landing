@@ -1,0 +1,343 @@
+// Speed
+
+.speed
+  padding: 115px 0 120px 0
+  background-size: cover
+  background-position: center
+  background-repeat: no-repeat
+  &__wrapper
+    display: flex
+    justify-content: space-between
+
+.speed_wrap
+  &__info
+    width: 50%
+    max-width: 100%
+  &__img
+    width: 50%
+
+.speed_info
+  &__title
+    margin-bottom: 15px
+    .title
+      text-transform: uppercase
+      color: #ffffff
+      font-size: 40px
+      font-weight: bold
+  &__text
+    margin-bottom: 30px
+    p
+      color: #ffffff
+      font-size: 20px
+      font-weight: 300
+
+// Features
+
+.features
+  margin-top: -90px
+  &__wrapper
+    box-shadow: 0 0 32px 1px rgba(0,0,0,0.14)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #fff
+
+.features_wrap
+  padding: 30px 60px
+  &__info
+    width: 30%
+    max-width: 100%
+    .title
+      margin-bottom: 5px
+      color: #515151
+      font-size: 40px
+      font-weight: 400
+    p
+      color: #979797
+      font-size: 16px
+      font-weight: 400
+  &__list
+    width: 65%
+    ul
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      li
+        width: 45%
+        display: flex
+        align-items: center
+        margin: 10px 0
+        img
+          height: 20px
+          margin-right: 20px
+        p
+          color: #515151
+          font-size: 14px
+          font-weight: 500
+          position: relative
+          &:before
+            position: absolute
+            content: ''
+            right: -15px
+            background-image: url('../img/icon_add.svg')
+            background-repeat: no-repeat
+            background-size: cover
+            width: 8px
+            height: 8px
+
+// Works
+
+.works
+  padding: 70px 0
+  &__info
+    margin-bottom: 65px
+  &__list
+    display: flex
+    justify-content: space-between
+
+.works_item
+  text-align: center
+  width: 30%
+  img
+    height: 100px
+    margin-bottom: 40px
+  .title
+    color: #515151
+    font-size: 17px
+    font-weight: 500
+    margin-bottom: 10px
+  p
+    width: 210px
+    max-width: 100%
+    margin: 0 auto
+    color: #979797
+    font-size: 13px
+    font-weight: 400
+
+// Tabs
+
+.tabs
+  background-color: #f8faf3
+  padding: 70px 0 100px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+
+.tabs_info
+  width: 410px
+  max-width: 100%
+  .title
+    margin-bottom: 40px
+    color: #515151
+    font-size: 40px
+    font-weight: 400
+
+.tabs_list
+  &__item
+    margin-bottom: 32px
+    cursor: pointer
+    position: relative
+    .title
+      color: #515151
+      font-size: 16px
+      font-weight: 500
+      margin-bottom: 17px
+    p
+      position: absolute
+      opacity: 0
+      visibility: hidden
+      color: #515151
+      font-size: 14px
+      font-weight: 400
+      line-height: 1.5
+      transition: 0.5s
+  .active
+    transition: 0.5s
+    .title
+      color: #78ab30
+    p
+      position: relative
+      opacity: 1
+      visibility: visible
+
+.tabs_img
+  position: relative
+  width: 630px
+  max-width: 100%
+  img
+    position: absolute
+    left: 0
+    top: 0
+    opacity: 0
+    transition: 0.5s
+  .active
+    transition: 0.5s
+    opacity: 1
+    position: relative
+
+// Partners
+
+.partners
+  padding: 95px 0 130px 0
+  &__info
+    margin-bottom: 60px
+  &__logo
+    display: flex
+    align-items: center
+    justify-content: space-between
+    img
+      height: 40px
+
+// Plan
+
+.plan
+  padding: 60px 0 180px 0
+  background-color: #f8faf3
+  &__info
+    margin-bottom: 100px
+  &__bottom
+    width: 650px
+    max-width: 100%
+    margin: 0 auto
+    text-align: center
+    p
+      color: #515151
+      font-size: 24px
+      font-weight: 400
+
+// Guarantee
+
+.guarantee
+  margin-top: -90px
+  &__wrapper
+    box-shadow: 0 0 32px 1px rgba(0,0,0,0.14)
+    display: flex
+    justify-content: space-between
+    align-items: center
+    background-color: #fff
+
+.guarantee_wrap
+  padding: 30px 60px
+  &__info
+    width: 50%
+    max-width: 100%
+    .title
+      margin-bottom: 5px
+      color: #515151
+      font-size: 40px
+      font-weight: 400
+      span
+        font-weight: 700
+        display: block
+    p
+      color: #979797
+      font-size: 16px
+      font-weight: 400
+  &__list
+    width: 45%
+    ul
+      display: flex
+      justify-content: space-between
+      flex-wrap: wrap
+      li
+        width: 100%
+        display: flex
+        align-items: center
+        margin: 10px 0
+        img
+          height: 20px
+          margin-right: 20px
+        p
+          color: #515151
+          font-size: 14px
+          font-weight: 500
+          position: relative
+
+// Questions
+
+.questions
+  padding: 80px 0 120px 0
+  &__wrapper
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 120px
+    .title
+      width: 320px
+      max-width: 100%
+      color: #515151
+      font-size: 40px
+      font-weight: 400
+    img
+      width: 276px
+  &__list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+
+.questions_item
+  width: 40%
+  margin-bottom: 30px
+  .title
+    margin-bottom: 10px
+    color: #515151
+    font-size: 13px
+    font-weight: 500
+  p
+    color: #838383
+    font-size: 13px
+    font-weight: 400
+    line-height: 1.5
+
+// Started
+
+.started
+  padding: 80px 0
+  background-color: #f8faf3
+  &__wrapper
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.started_info
+  width: 380px
+  max-width: 100%
+  .title
+    width: 325px
+    max-width: 100%
+    color: #515151
+    font-size: 40px
+    font-weight: 400
+    margin-bottom: 15px
+  form
+    input
+      outline: 0
+    input[type="email"]
+      width: 100%
+      max-width: 100%
+      height: 41px
+      border: 1px solid #515151
+      background-color: #ffffff
+      padding-left: 20px
+      color: #515151
+      font-size: 17px
+      font-weight: 400
+      margin-bottom: 32px
+      &::placeholder
+        color: #515151
+        font-size: 17px
+        font-weight: 400
+    input[type="submit"]
+      width: 144px
+      height: 41px
+      background-color: #f06d4f
+      text-transform: uppercase
+      color: #ffffff
+      font-size: 16px
+      font-weight: 500
+      border: 0
+      cursor: pointer
+
+.started_img
+  width: 520px
+  max-width: 100%

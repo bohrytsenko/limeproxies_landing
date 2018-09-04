@@ -1,0 +1,92 @@
+// Header
+
+.header
+  background-color: #1b1b1b
+  &__wrapper
+    min-height: 115px
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+.header_wrap
+  &__right
+    display: flex
+    align-items: center
+
+.logo
+  img
+    width: 121px
+
+.nav
+  ul
+    display: flex
+    li
+      padding: 10px 0
+      position: relative
+      a
+        font-family: 'Source Sans Pro', sans-serif
+        font-size: 14px
+        font-weight: 500
+        color: #fff
+        padding: 0 15px
+        transition: 0.5s
+        &:hover
+          transition: 0.5s
+          color: #f26d4f
+        i
+          margin: 0 0 0 5px
+          position: relative
+          top: -3px
+      &:hover
+        .sub-menu
+          transform: scale(1)
+      .sub-menu
+        transform: scale(0)
+        background: #fff
+        position: absolute
+        left: 0
+        z-index: 700000
+        padding: 14px 10px
+        top: 40px
+        box-shadow: 0 0 15px #222
+        min-width: 200%
+        flex-direction: column
+        &:before
+          position: absolute
+          content: ''
+          top: -10px
+          width: 0
+          height: 0
+          border-left: 10px solid transparent
+          border-right: 10px solid transparent
+          border-bottom: 10px solid #fff
+        li
+          margin-bottom: 10px
+          a
+            color: #000
+            transition: 0.5s
+            &:hover
+              transition: 0.5s
+              color: #f26d4f
+
+.header_btns
+  display: flex
+  a
+    font-family: 'Source Sans Pro', sans-serif
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    width: 100px
+    background: #f26d4f
+    color: #fff
+    padding: 0 20px
+    border-radius: 8px
+    border: 1px solid #f26d4f
+    height: 35px
+    font-size: 14px
+    margin-left: 10px
+    transition: 0.5s
+    &:hover
+      transition: 0.5s
+      background-color: rgba(255, 255, 255, 0)
+      color: #f26d4f
